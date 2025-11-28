@@ -289,9 +289,11 @@ function actualizarReloj(){
 }
 setInterval(actualizarReloj,1000);
 actualizarReloj();
+
 //ejercico8
 const pantalla = document.getElementById("pantalla");
-const botones = document.querySelectorAll("button");
+const botones = document.querySelectorAll("#calculadora-seccion button");
+
 botones.forEach((boton) => {
     boton.addEventListener("click", () => {
         const valor = boton.textContent;
@@ -309,6 +311,7 @@ botones.forEach((boton) => {
         }
     });
 });
+
 //ejrcicio 9
 const input = document.getElementById("tarea");
 const boton = document.getElementById("agregar");
