@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #007acc, #003366);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+
+#reloj {
+  font-size: 3em;
+  margin-top: 10px;
+  letter-spacing: 5px;
+}
+
+.amanecer { color: #ff9933; }
+.manana { color: #ffff66; }
+.mediodia { color: #ffffff; }
+.tarde { color: #ff6600; }
+.atardecer { color: #ff3366; }
+.noche { color: #00ffcc; }
+
+.calculadora {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px #0005;
+  margin: 20px 0;
+}
+
+.calculadora input {
+  width: 240px;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.calculadora button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+
+#tareas-seccion {
+  margin-top: 30px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  color: black;
+  margin: 5px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px #aaa;
+}
