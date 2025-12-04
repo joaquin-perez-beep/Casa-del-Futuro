@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto FInal Porfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Proyecto final Porfolio</h1>
+<button onclick="event.stopPropagation(); ejerciciocalculadora()">Abra calculadora</button>
+<hr>
+<hr>
+<button onclick="event.stopPropagation(); ejercicioadivinaelnumero()">Adivina el numero</button>
+<hr>
+<hr>
+<button onclick="event.stopPropagation(); tablaDeMultiplicar()">Tabla de multiplicar</button>
+<hr>
+<hr>
+<button onclick="event.stopPropagation(); ConverciondeTemperatura()">Temperatura </button>
+<hr>
+<hr>
+<button onclick="event.stopPropagation(); Productos()">Productos</button>
+<hr>
+<hr>
+<button onclick="event.stopPropagation(); Agenda()">Agenda :)</button>
+<hr>
+<hr>
+
+ <section id="reloj-seccion">
+    <h2>🕒 Reloj en tiempo real</h2>
+    <div id="reloj">00:00:00</div>
+  </section>
+  <hr>
+  <hr>
+  <section id="calculadora-seccion">
+    <h2>🧮 Calculadora</h2>
+    <div class="calculadora">
+      <input type="text" id="pantalla" readonly>
+      <div class="fila">
+        <button>7</button><button>8</button><button>9</button><button>/</button>
+      </div>
+      <div class="fila">
+        <button>4</button><button>5</button><button>6</button><button>*</button>
+      </div>
+      <div class="fila">
+        <button>1</button><button>2</button><button>3</button><button>-</button>
+      </div>
+      <div class="fila">
+        <button>0</button><button>.</button><button>=</button><button>+</button>
+      </div>
+      <div class="fila">
+        <button>C</button>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <hr>
+  <section id="tareas-seccion">
+    <h2>📝 Lista de Tareas</h2>
+    <input type="text" id="tarea" placeholder="Nueva tarea">
+    <button id="agregar">Agregar</button>
+    <ul id="lista"></ul>
+  </section>
+  <hr>
+  <hr>
+  <form id="registroForm">
+    <h2>Registro</h2>
+    <input type="text" id="nombre" placeholder="Nombre completo" />
+    <input type="email" id="email" placeholder="Correo electrónico" />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <button type="submit">Registrarse</button>
+    <div id="mensaje" class="error"></div>
+  </form>
+  <hr>
+  <hr>
+  <nav>
+    <a href="index-.html">telleva al modulo 4</a>
+  </nav>
+<script src="script.js"></script>
+</body>
+</html>

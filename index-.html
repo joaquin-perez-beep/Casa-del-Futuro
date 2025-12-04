@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+
+    <style>
+       body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222;
+    color: #0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* para que no arranque pegado arriba */
+}
+#root {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  width: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+}
+        h1{
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+        }
+        @keyframes shake {
+          0% { transform: translateX(0); }
+          25% { transform: translateX(-5px); }
+          50% { transform: translateX(5px); }
+          75% { transform: translateX(-5px); }
+          100% { transform: translateX(0); }
+        }
+        .animacion-alerta {
+          animation: shake 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+<h1 id="cronometro">00:00:00</h1>
+    <div>
+        <button id="iniciar">Iniciar</button>
+        <button id="pausar">Pausar</button>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+
+    <audio id="sonido" src="levántense! 🐈📢 - 『Rαιӄσ』.mp3"></audio>
+<hr>
+<hr>
+<div>
+ <h1>App del clima 🌞</h1>
+    <input type="text" id="ciudad" placeholder="Ingresa una ciudad">
+    <button id="buscarClima">Buscar</button>
+    <div id="resultadoClima"></div>
+</div>
+<hr>
+<hr>
+<div>
+    <h1>🔎 Buscador de Usuarios de GitHub</h1>
+    <input type="text" id="usuario" placeholder="Ingresa nombre de usuario">
+    <button id="buscarGit">Buscar</button>
+    <div id="resultadoGit"></div>
+</div>
+<hr>
+<hr>
+<div>
+<div>
+  <h1>Pokemones</h1>
+  <input type="text" id="pokemonInput" placeholder="Ejemplo: Pikachu">
+  <button id="BuscarPokemon">Buscar</button>
+  <div id="resultadoPokemon"></div>
+</div>
+<hr>
+<hr>
+<div>
+  <h1>🔍 Buscar perro por raza</h1>
+  <input type="text" id="razaInput" placeholder="Ejemplo: husky">
+  <button id="BuscarRaza">Buscar</button>
+  <div id="resultadoPerro"></div>
+</div>
+<hr>
+<hr>
+<div>
+ <h1>📝 Mis Notas</h1>
+  <textarea id="nota" placeholder="Escribe una nota..."></textarea><br>
+  <button id="guardar">Guardar Nota</button>
+  <button id="borrarTodo">Borrar Todo</button>
+ <ul id="listaNotas"></ul>
+</div>
+<hr>
+<hr>
+<div>
+  <h1>Mini-proyecto: Tarjetas con React</h1>
+
+
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+</div>
+<nav> <a href="index-.html">modulo2,3</a>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>

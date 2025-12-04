@@ -1,0 +1,7 @@
+.ubica{width: 200px;/* sirve para dar un ancho fijo*/
+height: 200px;
+border: 2px solid red;
+position: fixed;/*Fija un elemento en la pantalla sin importar el scroll.
+Siempre se mantiene visible aunque bajes o subas en la página.*/
+position: sticky ;/*el sticky hace que el elemento se quede pegado en la pocicion de elijas*/
+top: 0;/*el top es para arriba*/}
